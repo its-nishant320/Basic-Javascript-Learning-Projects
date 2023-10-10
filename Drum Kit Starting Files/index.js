@@ -7,6 +7,7 @@ for(var i=0; i<numberOfButtons; i++) {
 
 document.addEventListener("keypress",function (event) {
     makeSound(event.key);
+    buttonAnimation(event.innerHTML)
 })
 
 function makeSound (key) {
@@ -82,3 +83,12 @@ function handleClick() {
             break;
     }
 }
+
+
+function buttonAnimation(buttoninnerHTML) {
+    var activeButton = document.querySelector("." + buttoninnerHTML);
+
+    activeButton.classList.add("pressed");
+
+}
+
