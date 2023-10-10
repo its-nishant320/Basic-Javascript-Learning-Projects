@@ -1,1 +1,2 @@
-$("h1").css("color","red")
+$("h1").text("Hello world");
+$("button").text("Dont click me")
