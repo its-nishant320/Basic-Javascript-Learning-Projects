@@ -8,6 +8,8 @@ inquirer
     message:"Type your url",
     name:"URL"
    }
+
+   
   ])
   .then((answers) => {
     const url = answers.URL;
