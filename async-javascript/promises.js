@@ -54,3 +54,16 @@ promiseThree.then(function(user) {
 .finally(function() {
     console.log("Promise execution completed");
 })
+
+const PromiseFour = new Promise(function(resolve,reject) {
+    setTimeout(function() {
+        let error = false;
+        if(!error) {
+            resolve({username: "Nishant", rollno: "AP2211XXXX944"});
+        }
+        else {
+            reject("Error: Something went wrong");
+        }
+    },1000)
+});
+
