@@ -2,8 +2,7 @@ let a = document.querySelector('#start');
 
 a.addEventListener('click', function(e) {
 var changeme = setInterval(function() {
-        document.querySelector('h1').innerHTML="Hello Everyone";
-
+    document.querySelector('h1').innerHTML="Hello Everyone";
     },2000);
 })
 
