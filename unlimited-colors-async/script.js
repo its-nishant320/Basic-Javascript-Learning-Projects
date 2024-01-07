@@ -10,7 +10,6 @@ return color;
 
 let changing = function() {
     document.body.style.backgroundColor = randomColor();
-    console.log("hey")
 }
 
 let intervalId;
